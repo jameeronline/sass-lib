@@ -1,0 +1,37 @@
+//Colors
+$primary: #10b981 !default;
+$secondary: #3b82f6 !default;
+
+
+$error: #ef4444 !default;
+$success: #22c55e !default;
+$info: #06b6d4 !default;
+$warning: #eab308 !default;
+$black: #000 !default;
+$white: #fff !default;
+
+$brand-colors: (
+    "primary" : $primary,
+    "secondary": $secondary
+);
+
+$system-colors: (
+    "error": $error,
+    "success": $success,
+    "info": $info,
+    "warning": $warning,
+    "black": $black,
+    "white": $white
+);
+
+$theme-colors: map-merge($brand-colors, $system-colors);
+
+
+//Base units
+$base-font-size: 16px;
+
+$base-spacing: 8px;
+$base-font-family: "Roboto", Arial, sans-serif;
+
+$base-padding: $base-spacing;
+$base-margin: $base-spacing

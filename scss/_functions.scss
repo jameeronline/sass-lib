@@ -1,0 +1,8 @@
+//Modules
+@use "sass:math";
+
+//Function to convert px to rem
+@function rem($value) {
+    $remValue: math.div($value , 16) + rem; 
+    @return $remValue;
+}

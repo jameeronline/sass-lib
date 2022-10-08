@@ -1,0 +1,29 @@
+@use "sass:map";
+@use "sass:color";
+
+//Functions
+@use "functions" as *;
+
+@use "variables" as *;
+
+//@debug map.merge($brand-colors, $system-colors);
+//@debug map.has-key($brand-colors, "alert");
+
+//Reset
+@use '../node_modules/normalize.css/normalize.css' as *;
+
+//Componets
+@use "components/index" as *;
+
+
+
+//text utilities
+@each $key, $val in $theme-colors {
+    .text-#{$key}{
+        color: $val;
+    }
+
+    .bg-#{$key}{
+        color: $val;
+    }
+}
